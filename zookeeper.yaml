@@ -128,11 +128,11 @@ spec:
       volumes: 
       - name: datadir
         emptyDir: {}
-          volumeClaimTemplates:
-          - metadata:
-              name: datadir
-            spec:
-              accessModes: [ "ReadWriteOnce" ]
-              resources:
-                requests:
-                  storage: 10Gi
+        volumeClaimTemplates:
+        - metadata:
+            name: datadir
+          spec:
+            accessModes: [ "ReadWriteOnce" ]
+            resources:
+              requests:
+                storage: 10Gi
